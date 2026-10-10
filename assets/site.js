@@ -34,6 +34,19 @@
     });
   });
 
+  // 행사 사례 탭
+  var caseLinks=[].slice.call(document.querySelectorAll('.case-links a[href^="#case-"]'));
+  var cases=[].slice.call(document.querySelectorAll('section.case'));
+  function showCase(id,scroll){
+    cases.forEach(function(c){c.classList.toggle('active',c.id===id)});
+    caseLinks.forEach(function(a){a.setAttribute('aria-current',a.getAttribute('href')==='#'+id?'true':'false')});
+    if(scroll){var el=document.getElementById(id);if(el)el.scrollIntoView({behavior:'smooth',block:'start'})}
+  }
+  if(caseLinks.length&&cases.length){
+    caseLinks.forEach(function(a){a.addEventListener('click',function(e){e.preventDefault();history.replaceState(null,'',a.getAttribute('href'));showCase(a.getAttribute('href').slice(1),true)})});
+    var h=location.hash.slice(1); showCase(cases.some(function(c){return c.id===h})?h:cases[0].id,false);
+  }
+
   var lb=document.getElementById('lb'),img=document.getElementById('lbImg'),cap=document.getElementById('lbCap');
   document.querySelectorAll('[data-full]').forEach(function(b){
     b.addEventListener('click',function(){

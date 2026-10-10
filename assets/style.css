@@ -260,3 +260,12 @@ dialog.lb button{position:absolute;top:8px;right:8px;background:rgba(0,0,0,.55);
 .chip[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:#fff}
 .subhero .wrap{padding-block:120px 72px}
 .subhero h1{font-weight:300}
+
+/* 행사별 탭: 이름을 누르면 그 행사 사진만 */
+.case-links{gap:8px 10px}
+.case-links a{display:inline-block;padding:9px 16px;border:1px solid var(--line);border-radius:999px;background:var(--surface);font-weight:400;color:var(--ink);font-size:14.5px}
+.case-links a:hover{border-color:var(--accent);text-decoration:none}
+.case-links a[aria-current="true"]{background:var(--accent);border-color:var(--accent);color:#fff}
+.case{display:none}
+.case.active{display:block}
+.case + .case{border-top:0}
