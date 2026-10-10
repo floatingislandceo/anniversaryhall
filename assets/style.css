@@ -29,8 +29,8 @@ h1,h2,h3{font-family:var(--serif);font-weight:300;letter-spacing:-.01em;text-wra
 .site-head{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:rgba(63,71,81,.94);backdrop-filter:blur(8px);color:var(--on-river)}
 .bar{display:flex;align-items:center;gap:24px;padding-block:14px}
 .brand{text-decoration:none;display:flex;flex-direction:column;line-height:1.2;flex:none}
-.brand b{font-family:var(--serif);font-size:19px;letter-spacing:.03em}
-.brand small{font-family:var(--display);font-size:11px;letter-spacing:.24em;opacity:.7}
+.brand img{height:30px;width:auto;display:block}
+.brand small{font-family:var(--display);font-size:10.5px;letter-spacing:.26em;opacity:.65;margin-top:5px}
 .menu{display:flex;gap:22px;list-style:none;margin:0;padding:0;font-size:14.5px}
 .menu a{text-decoration:none;opacity:.82;padding-block:6px;border-bottom:1px solid transparent}
 .menu a:hover,.menu a:focus-visible{opacity:1}
@@ -232,3 +232,31 @@ dialog.lb button{position:absolute;top:8px;right:8px;background:rgba(0,0,0,.55);
 .bleed .ph img{height:100%}
 @media (max-width:900px){.wall,.bleed{grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:200px}}
 .gal-group{margin-top:44px}.gal-group .wrap{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:12px}.gal-group .eyebrow{margin:0}
+
+/* ── 디자인 업그레이드: 여백·정돈 ── */
+.hero-photo{position:relative;min-height:min(86vh,760px);display:flex;align-items:flex-end;background:linear-gradient(180deg,rgba(43,48,56,.25) 0%,rgba(43,48,56,.55) 55%,rgba(43,48,56,.92) 100%),var(--img) center 40%/cover no-repeat,var(--river)}
+.hero-photo .hero-in{padding-block:120px 56px;width:100%}
+.hero-photo h1{font-weight:300;letter-spacing:-.02em}
+.hero-photo .lead{color:#dfe5ec;max-width:34em}
+.hero-photo .keyfacts{border-top-color:rgba(255,255,255,.18);margin-top:56px}
+.hero-photo .keyfacts dt{color:#fff;font-weight:400}
+.hero-photo .keyfacts dd{color:#c3ccd6}
+.sec{padding-block:112px}
+.sec-head{margin-bottom:44px}
+.sec h2{font-weight:300;letter-spacing:-.015em}
+.eyebrow{font-size:13px;letter-spacing:.32em}
+.tiles{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.tiles .ph img{aspect-ratio:4/3}
+@media (max-width:900px){.tiles{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.scard{box-shadow:none;border:1px solid var(--line)}
+.svc{border-top:1px solid var(--line);padding-top:22px}
+.svc img{display:none}
+.svc h3{font-weight:400;font-size:19px}
+.track li{font-weight:300}
+.cta-band{background:var(--river)}
+.gal-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.gal-grid .ev .ph img{aspect-ratio:1/1}
+@media (max-width:900px){.gal-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.chip[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:#fff}
+.subhero .wrap{padding-block:120px 72px}
+.subhero h1{font-weight:300}
