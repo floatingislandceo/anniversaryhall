@@ -17,6 +17,7 @@
     document.title=(l!=='ko'&&titleKey&&D[l][titleKey])?D[l][titleKey]:titleKo;
     document.querySelectorAll('.lang button').forEach(function(b){b.setAttribute('aria-pressed',b.dataset.lang===l?'true':'false')});
     try{localStorage.setItem('ah-lang',l)}catch(e){}
+    document.dispatchEvent(new CustomEvent('ah-lang'));
   }
   document.querySelectorAll('.lang button').forEach(function(b){b.addEventListener('click',function(){apply(b.dataset.lang)})});
   apply(get());
@@ -34,7 +35,25 @@
     });
   });
 
-  // 행사 사례 탭
+  // 행사 사례: data/cases.json에서 읽어 렌더 (새 행사는 JSON에 추가만 하면 됨)
+  var casesBox=document.getElementById('cases'), linksBox=document.getElementById('caseLinks');
+  if(casesBox&&linksBox){
+    var CASE_LIST=null;
+    function renderCases(list){
+      var L=document.documentElement.lang==='zh'?'zh':(document.documentElement.lang==='en'?'en':'ko');
+      function t(o){return o[L]||o.ko}
+      linksBox.innerHTML=list.map(function(c){return '<a href="#'+c.id+'">'+t(c.title)+' →</a>'}).join('');
+      casesBox.innerHTML=list.map(function(c,i){
+        var gal=c.photos.map(function(ph){return '<button type="button" class="ph'+(ph.wide?' wide':'')+'" data-full="img/'+ph.src+'" data-cap="'+ph.alt+'"><img src="img/'+ph.src+'" alt="'+ph.alt+'" loading="lazy"></button>'}).join('');
+        var facts=c.facts.map(function(f){return '<li>'+t(f)+'</li>'}).join('');
+        return '<section class="sec case" id="'+c.id+'"><div class="wrap"><div class="case-head"><div><div class="eyebrow">'+(c.eyebrow||('Case '+String(i+1).padStart(2,'0')))+'</div><h2>'+t(c.title)+'</h2></div><p class="muted">'+t(c.text)+'</p></div><div class="gallery-grid">'+gal+'</div><ul class="equip case-facts">'+facts+'</ul></div></section>'
+      }).join('');
+      bindCases(); bindLightbox(casesBox);
+    }
+    fetch('data/cases.json').then(function(r){return r.json()}).then(function(list){CASE_LIST=list;renderCases(list)});
+    document.addEventListener('ah-lang',function(){if(CASE_LIST)renderCases(CASE_LIST)});
+  }
+  function bindCases(){
   var caseLinks=[].slice.call(document.querySelectorAll('.case-links a[href^="#case-"]'));
   var cases=[].slice.call(document.querySelectorAll('section.case'));
   function showCase(id,scroll){
@@ -46,14 +65,20 @@
     caseLinks.forEach(function(a){a.addEventListener('click',function(e){e.preventDefault();history.replaceState(null,'',a.getAttribute('href'));showCase(a.getAttribute('href').slice(1),true)})});
     var h=location.hash.slice(1); showCase(cases.some(function(c){return c.id===h})?h:cases[0].id,false);
   }
+  }
+  bindCases();
 
   var lb=document.getElementById('lb'),img=document.getElementById('lbImg'),cap=document.getElementById('lbCap');
-  document.querySelectorAll('[data-full]').forEach(function(b){
-    b.addEventListener('click',function(){
-      img.src=b.dataset.full; img.alt=b.dataset.cap||''; cap.textContent=b.dataset.cap||'';
-      if(lb.showModal) lb.showModal();
+  function bindLightbox(root){
+    (root||document).querySelectorAll('[data-full]').forEach(function(b){
+      if(b.dataset.bound) return; b.dataset.bound='1';
+      b.addEventListener('click',function(){
+        img.src=b.dataset.full; img.alt=b.dataset.cap||''; cap.textContent=b.dataset.cap||'';
+        if(lb.showModal) lb.showModal();
+      });
     });
-  });
+  }
+  bindLightbox();
   if(lb){document.getElementById('lbClose').addEventListener('click',function(){lb.close()});
     lb.addEventListener('click',function(e){if(e.target===lb)lb.close()});}
 
