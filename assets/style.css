@@ -269,3 +269,96 @@ dialog.lb button{position:absolute;top:8px;right:8px;background:rgba(0,0,0,.55);
 .case{display:none}
 .case.active{display:block}
 .case + .case{border-top:0}
+/* home: tech tiles + access */
+.tiles-tech .tile{position:relative;display:block;color:inherit;text-decoration:none}
+.tiles-tech .tile-cap{padding:12px 2px 0}.tiles-tech .tile-cap b{display:block;font-weight:500;font-size:16px}.tiles-tech .tile-cap small{color:var(--muted);font-size:13px}
+#home-access .framed img{width:100%;display:block}
+h1,h2,h3,.lead,.lead2{word-break:keep-all}
+
+/* ================= 브랜드 톤앤매너 업그레이드 (Sevit Blue #247CA6) ================= */
+:root{--rule:rgba(36,124,166,.28);--shadow:0 1px 2px rgba(23,48,64,.04),0 8px 28px -12px rgba(23,48,64,.14)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--rule:rgba(142,195,218,.3);--shadow:0 1px 2px rgba(0,0,0,.3),0 10px 30px -14px rgba(0,0,0,.6)}}
+:root[data-theme="dark"]{--rule:rgba(142,195,218,.3);--shadow:0 1px 2px rgba(0,0,0,.3),0 10px 30px -14px rgba(0,0,0,.6)}
+
+/* 아이브로우 — 얇은 라인 모티프 */
+.eyebrow{display:flex;align-items:center;gap:12px;font-size:13px;letter-spacing:.28em;margin-bottom:12px}
+.eyebrow::before{content:"";width:26px;height:1px;background:currentColor;opacity:.55;flex:none}
+.sec-head .eyebrow,.space-head .eyebrow{margin-bottom:14px}
+
+/* 타이포 리듬 */
+.sec h2{letter-spacing:-.015em}
+.lead,.lead2{color:var(--muted);line-height:1.8}
+.hero .lead{color:#d9dfe6}
+
+/* 버튼 */
+.btn{border-radius:1px;letter-spacing:.01em;transition:background .25s,color .25s,border-color .25s,transform .25s}
+.btn.solid{background:var(--accent);color:#fff;border-color:var(--accent)}
+.btn.solid:hover{background:#1d6a8f;border-color:#1d6a8f}
+.btn.ghost:hover{background:rgba(142,195,218,.14)}
+.btn.line:hover{background:var(--accent);color:#fff}
+.link-arrow{font-weight:500;letter-spacing:.01em}
+.more{color:var(--accent);text-decoration:none;font-size:14.5px;font-weight:500;white-space:nowrap}
+.more:hover{text-decoration:underline;text-underline-offset:4px}
+
+/* 히어로 숫자 */
+.keyfacts{border-top:1px solid rgba(142,195,218,.3);gap:0}
+.keyfacts div{padding:20px 24px 2px 0;position:relative}
+.keyfacts div + div{padding-left:24px;border-left:1px solid rgba(142,195,218,.18)}
+.keyfacts dt{font-size:clamp(26px,3.4vw,36px);font-weight:400;letter-spacing:.01em}
+.keyfacts dd{font-size:12.5px;letter-spacing:.06em;color:#b7c3cf;margin-top:2px}
+@media (max-width:760px){.keyfacts div:nth-child(odd){padding-left:0;border-left:0}}
+
+/* 섹션 구분 — 얇은 라인 */
+.sec + .sec:not(.tint):not(.space-sec){border-top:1px solid var(--line)}
+.sec.tint{background:var(--blush);border-block:1px solid var(--line)}
+
+/* 사진 */
+.ph img{transition:transform .6s cubic-bezier(.2,.6,.2,1)}
+.ph:hover img{transform:scale(1.035)}
+.framed{padding:20px;border:1px solid var(--line);background:var(--surface)}
+.sec.tint .framed{background:var(--bg)}
+
+/* 카드 */
+.scard{border:1px solid var(--line);background:var(--surface);transition:border-color .25s,transform .25s,box-shadow .25s}
+a.scard:hover{border-color:var(--rule);transform:translateY(-3px);box-shadow:var(--shadow)}
+.scard .disp{letter-spacing:.2em;font-size:11.5px}
+
+/* 제원 리스트 */
+.spec > div{display:grid;grid-template-columns:minmax(120px,170px) 1fr;gap:16px 20px;padding-block:15px;border-bottom:1px solid var(--line);margin:0}
+.spec dt{color:var(--muted);font-size:14px;letter-spacing:.02em}
+.spec dd{margin:0;font-size:15.5px}
+.spec > div:first-child{border-top:1px solid var(--line)}
+.equip{list-style:none;padding:0;margin:0}
+.equip li{padding-block:11px;border-bottom:1px solid var(--line);font-size:15px;display:flex;gap:12px}
+.equip li::before{content:"";width:5px;height:5px;margin-top:9px;background:var(--accent);flex:none;transform:rotate(45deg)}
+
+/* 서브내비 칩 */
+.subnav a{transition:border-color .2s,color .2s,background .2s;letter-spacing:.01em}
+.subnav a:hover{border-color:var(--accent);color:var(--accent)}
+
+/* 공간 섹션 간격 */
+.space-sec{padding-block:104px}
+.space-head{margin-bottom:34px}
+
+/* 다운로드 카드 */
+.dl{display:inline-flex;align-items:center;gap:16px;margin-top:30px;padding:18px 26px 18px 20px;border:1px solid var(--rule);background:var(--surface);text-decoration:none;transition:border-color .25s,transform .25s,box-shadow .25s}
+.sec.tint .dl{background:var(--bg)}
+.dl:hover{border-color:var(--accent);transform:translateY(-2px);box-shadow:var(--shadow)}
+.dl-ico{display:grid;place-items:center;width:46px;height:46px;border:1px solid var(--rule);border-radius:50%;color:var(--accent);flex:none;transition:background .25s,color .25s,border-color .25s}
+.dl:hover .dl-ico{background:var(--accent);border-color:var(--accent);color:#fff}
+.dl-txt{display:flex;flex-direction:column;gap:3px}
+.dl-txt b{font-weight:500;font-size:16px;color:var(--ink)}
+.dl-txt small{color:var(--muted);font-size:13px}
+@media (max-width:520px){.dl{width:100%;padding:16px}}
+
+/* 홈 설비 타일 */
+.tiles-tech .tile{transition:transform .25s}
+.tiles-tech .tile:hover{transform:translateY(-3px)}
+.tiles-tech .tile-cap b{letter-spacing:-.005em}
+
+/* CTA 밴드 */
+.cta-band{background:var(--river);color:var(--on-river)}
+.cta-band h2{letter-spacing:-.015em}
+
+/* 포커스 */
+a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:1px}
