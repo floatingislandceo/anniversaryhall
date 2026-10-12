@@ -633,3 +633,16 @@ a.scard:hover b{text-decoration:none;color:var(--accent)}
 .social a:hover{border-color:var(--accent);color:var(--accent)}
 .social svg{flex:none}
 .contact-social{margin-top:10px}
+/* 데스크톱 헤더: 신라·롯데식 센터 로고 + 아래 줄 센터 메뉴 */
+@media (min-width:981px){
+  .site-head .bar{flex-wrap:wrap;justify-content:center;position:relative;padding-block:22px 0;gap:0}
+  .brand{order:1;flex-basis:100%;align-items:center;text-align:center}
+  .brand img{height:32px}
+  .brand small{margin-top:7px}
+  nav{order:2;flex-basis:100%;margin:14px 0 0}
+  .menu{justify-content:center;gap:40px;font-size:13.5px;letter-spacing:.12em}
+  .menu a{padding-block:12px 14px}
+  .tools{position:absolute;right:20px;top:24px}
+  .subnav{top:calc(env(safe-area-inset-top,0px) + 126px)}
+  .space-sec{scroll-margin-top:190px}
+}
