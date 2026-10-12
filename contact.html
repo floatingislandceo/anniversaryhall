@@ -43,6 +43,13 @@
       <div><dt><span data-i18n="c.mail">이메일</span></dt><dd><a href="mailto:anniversary.kr@gmail.com">anniversary.kr@gmail.com</a></dd></div>
       <div><dt><span data-i18n="c.addr">주소</span></dt><dd><span data-i18n="foot.addr">서울 서초구 반포동 650 세빛섬 채빛섬 1층</span></dd></div>
     </dl>
+    <div class="eyebrow" style="margin-top:32px">Follow</div>
+    <ul class="social contact-social" aria-label="Social">
+        <li><a href="https://www.instagram.com/anniversaryhall" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r=".9" fill="currentColor" stroke="none"/></svg>Instagram</a></li>
+        <li><a href="https://www.facebook.com/anniversaryhall" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 8h3V4h-3a4 4 0 00-4 4v3H7v4h3v6h4v-6h3l1-4h-4V8z"/></svg>Facebook</a></li>
+        <li><a href="https://blog.anniversaryhall.com" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 4h11l3 3v13H5z"/><path d="M8 10h8M8 14h8M8 18h5"/></svg>Blog</a></li>
+        <li><a href="https://wa.me/821067153458" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 20l1.3-3.8A8 8 0 1112 20a8 8 0 01-3.9-1z"/><path d="M9 9.5c0 3 2.5 5.5 5.5 5.5l1-1.5-2-1-1 1a4 4 0 01-2-2l1-1-1-2z" fill="currentColor" stroke="none"/></svg>WhatsApp</a></li>
+      </ul>
     <div class="eyebrow" style="margin-top:36px">Process</div>
     <ol class="steps">
       <li><b data-i18n="st1">문의</b><span data-i18n="st1p">희망 날짜, 인원, 행사 성격 전달</span></li>
@@ -58,7 +65,10 @@
   <form class="form" id="enq" novalidate>
     <div class="eyebrow">Enquiry Form</div>
     <h2 data-i18n="con.form">문의서 작성</h2>
-    <label for="f-name"><span data-i18n="fm.name">성함 · 회사</span> <em>*</em></label><input id="f-name" name="name" required autocomplete="name">
+    <div class="row2">
+      <div><label for="f-company"><span data-i18n="fm.company">회사 · 단체명</span></label><input id="f-company" name="company" autocomplete="organization"></div>
+      <div><label for="f-name"><span data-i18n="fm.name">성명</span> <em>*</em></label><input id="f-name" name="name" required autocomplete="name"></div>
+    </div>
     <div class="row2">
       <div><label for="f-mail"><span data-i18n="fm.mail">이메일</span> <em>*</em></label><input id="f-mail" name="email" type="email" required autocomplete="email" placeholder="name@company.com"></div>
       <div><label for="f-tel"><span data-i18n="fm.tel">연락처</span> <em>*</em></label><input id="f-tel" name="tel" type="tel" required autocomplete="tel" placeholder="010-0000-0000"></div>
@@ -80,12 +90,19 @@
       <label><input type="checkbox" name="type" value="팝업 이벤트 · 촬영"><span><span data-i18n="o.pop">팝업 이벤트 · 촬영</span></span></label>
       <label><input type="checkbox" name="type" value="기타"><span><span data-i18n="o.etc">기타</span></span></label>
     </fieldset>
-    <fieldset class="chk"><legend><span data-i18n="fm.meal">식사 형태</span></legend>
-      <label><input type="radio" name="meal" value="코스 (착석)"><span><span data-i18n="m.course">코스 (착석)</span></span></label>
-      <label><input type="radio" name="meal" value="뷔페"><span><span data-i18n="m.buffet">뷔페</span></span></label>
+    <fieldset class="chk"><legend><span data-i18n="fm.meal">식사 형태</span> <small><span data-i18n="fm.mealnote">1인 기준 · 부가세 별도 · 메뉴에 따라 조정</span></small></legend>
+      <label><input type="radio" name="meal" value="코스 (착석) 10~20만원"><span><span data-i18n="m.course">코스 (착석)</span> <i>₩100,000~200,000</i></span></label>
+      <label><input type="radio" name="meal" value="뷔페 13~15만원~"><span><span data-i18n="m.buffet">뷔페</span> <i>₩130,000~150,000~</i></span></label>
       <label><input type="radio" name="meal" value="핑거푸드 · 칵테일"><span><span data-i18n="m.finger">핑거푸드 · 칵테일</span></span></label>
       <label><input type="radio" name="meal" value="커피 브레이크만"><span><span data-i18n="m.coffee">커피 브레이크만</span></span></label>
       <label><input type="radio" name="meal" value="식사 없음"><span><span data-i18n="m.none">식사 없음</span></span></label>
+    </fieldset>
+    <fieldset class="chk"><legend><span data-i18n="fm.diet">특별 식단</span> <small><span data-i18n="fm.dietnote">인도 음식 · 할랄 · 채식 등 맞춤 가능</span></small></legend>
+      <label><input type="checkbox" name="diet" value="인도 음식"><span><span data-i18n="d.indian">인도 음식</span></span></label>
+      <label><input type="checkbox" name="diet" value="할랄"><span><span data-i18n="d.halal">할랄</span></span></label>
+      <label><input type="checkbox" name="diet" value="채식 · 비건"><span><span data-i18n="d.veg">채식 · 비건</span></span></label>
+      <label><input type="checkbox" name="diet" value="글루텐프리 · 알레르기"><span><span data-i18n="d.gf">글루텐프리 · 알레르기</span></span></label>
+      <label><input type="checkbox" name="diet" value="기타 특이 식단"><span><span data-i18n="d.etc">기타 특이 식단</span></span></label>
     </fieldset>
     <label for="f-msg"><span data-i18n="fm.msg">요청 사항</span></label><textarea id="f-msg" name="msg" rows="4" placeholder="무대·LED 사용, 포토존, 예산 범위 등 자유롭게 적어 주세요 / Stage, LED, photo zone, budget…"></textarea>
     <p class="form-err" id="formErr" hidden><span data-i18n="fm.err">성함, 이메일, 연락처, 희망 날짜, 인원은 꼭 입력해 주세요.</span></p>
@@ -100,6 +117,12 @@
       <b class="foot-brand"><span data-i18n="brand">애니버셔리홀</span></b>
       <p data-i18n="foot.addr">서울 서초구 반포동 650 세빛섬 채빛섬 1층</p>
       <p><span class="mono">T</span> <a href="tel:+8225372440">02-537-2440</a> &nbsp; <span class="mono">W</span> <a href="https://wa.me/821067153458" target="_blank" rel="noopener">010-6715-3458</a> &nbsp; <span class="mono">E</span> <a href="mailto:anniversary.kr@gmail.com">anniversary.kr@gmail.com</a></p>
+      <ul class="social" aria-label="Social">
+        <li><a href="https://www.instagram.com/anniversaryhall" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r=".9" fill="currentColor" stroke="none"/></svg>Instagram</a></li>
+        <li><a href="https://www.facebook.com/anniversaryhall" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 8h3V4h-3a4 4 0 00-4 4v3H7v4h3v6h4v-6h3l1-4h-4V8z"/></svg>Facebook</a></li>
+        <li><a href="https://blog.anniversaryhall.com" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 4h11l3 3v13H5z"/><path d="M8 10h8M8 14h8M8 18h5"/></svg>Blog</a></li>
+        <li><a href="https://wa.me/821067153458" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 20l1.3-3.8A8 8 0 1112 20a8 8 0 01-3.9-1z"/><path d="M9 9.5c0 3 2.5 5.5 5.5 5.5l1-1.5-2-1-1 1a4 4 0 01-2-2l1-1-1-2z" fill="currentColor" stroke="none"/></svg>WhatsApp</a></li>
+      </ul>
     </div>
     <ul class="foot-links"><li><a href="./"><span data-i18n="nav.home">홈</span></a></li><li><a href="spaces.html"><span data-i18n="nav.spaces">공간 안내</span></a></li><li><a href="events.html"><span data-i18n="nav.events">행사 사례</span></a></li><li><a href="wedding.html"><span data-i18n="nav.wedding">웨딩 · 가족</span></a></li><li><a href="gallery.html"><span data-i18n="nav.gallery">갤러리</span></a></li><li><a href="location.html"><span data-i18n="nav.location">오시는 길</span></a></li><li><a href="contact.html"><span data-i18n="nav.contact">대관 문의</span></a></li></ul>
   </div>
