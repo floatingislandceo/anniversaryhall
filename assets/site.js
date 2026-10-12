@@ -95,10 +95,12 @@
     e.preventDefault();
     var v=function(id){return (document.getElementById(id).value||'').trim()};
     var err=document.getElementById('formErr');
-    if(!v('f-name')||!v('f-tel')){err.hidden=false;return}
+    if(!v('f-name')||!v('f-mail')||!v('f-tel')||!v('f-date')||!v('f-guests')){err.hidden=false;err.scrollIntoView({block:'center'});return}
     err.hidden=true;
-    var sel=document.getElementById('f-type'); var type=sel.options[sel.selectedIndex].textContent;
-    var body='성함·회사 / Name: '+v('f-name')+'\n연락처 / Contact: '+v('f-tel')+'\n희망 날짜 / Date: '+v('f-date')+'\n예상 인원 / Guests: '+v('f-guests')+'\n행사 종류 / Type: '+type+'\n\n'+v('f-msg');
-    location.href='mailto:anniversary.kr@gmail.com?subject='+encodeURIComponent('[대관 문의] '+type+' '+v('f-date'))+'&body='+encodeURIComponent(body);
+    var types=[].map.call(f.querySelectorAll('input[name=type]:checked'),function(c){return c.value}).join(', ')||'-';
+    var meal=(f.querySelector('input[name=meal]:checked')||{}).value||'-';
+    var hours=(v('f-start')||'?')+' ~ '+(v('f-end')||'?');
+    var body='성함·회사 / Name: '+v('f-name')+'\n이메일 / Email: '+v('f-mail')+'\n연락처 / Phone: '+v('f-tel')+'\n희망 날짜 / Date: '+v('f-date')+'\n사용 시간 / Hours: '+hours+'\n예상 인원 / Guests: '+v('f-guests')+'\n행사 종류 / Type: '+types+'\n식사 형태 / Meal: '+meal+'\n\n'+v('f-msg');
+    location.href='mailto:anniversary.kr@gmail.com?subject='+encodeURIComponent('[대관 문의] '+types+' '+v('f-date')+' '+v('f-guests')+'명')+'&body='+encodeURIComponent(body);
   });
 })();

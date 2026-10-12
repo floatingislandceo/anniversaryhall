@@ -1,6 +1,6 @@
 /* 애니버셔리홀 브랜드: 메인 블루 #0E96C8 · 서브 세빛섬 유리톤 #AEBAD4 · 건메탈 #48505A · 웜 화이트 #F7F7F5 · 제목은 얇은 고딕 */
 :root{
-  --bg:#f6f5f2; --surface:#ffffff; --blush:#e9eff3; --ink:#2b3036; --muted:#6b7078; --line:#dce1e7;
+  --bg:#f5f1ea; --surface:#ffffff; --blush:#ede7dc; --ink:#2b3036; --muted:#6b7078; --line:#e0dad0;
   --river:#3f4751; --river-2:#4a535e; --light:#8ec3da; --accent:#247ca6; --on-river:#f2f4f7;
   --display:"Cormorant Garamond","Gowun Batang",Georgia,serif;
   --serif:"IBM Plex Sans KR","Noto Sans SC",-apple-system,"Apple SD Gothic Neo","Malgun Gothic","PingFang SC",sans-serif;
@@ -383,7 +383,88 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-off
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .hero-light{background:linear-gradient(180deg,#23272d 0%,var(--bg) 100%)}}
 :root[data-theme="dark"] .hero-light{background:linear-gradient(180deg,#23272d 0%,var(--bg) 100%)}
 .hero-grid{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+@media (max-width:900px){.hero-grid{grid-template-columns:1fr}}
 .hero-light h1{font-size:clamp(34px,4.4vw,56px)}
 .hero-fig{isolation:isolate}
 .hero-fig img{position:relative;z-index:1}
 .hero-fig::before{z-index:0;border-color:var(--accent);opacity:.35}
+
+/* ===== 모바일 가독성 업그레이드 ===== */
+@media (max-width:640px){
+  body{font-size:15.5px;line-height:1.7}
+  .wrap{padding-inline:18px}
+  header .wrap{min-height:58px}
+  .logo img,.logo svg{height:26px}
+  .lang button{padding:5px 8px;white-space:nowrap;font-size:11.5px}
+  .hero-grid{gap:28px;padding-block:40px 20px}
+  .hero-light .eyebrow{font-size:11.5px;letter-spacing:.24em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .hero-light h1{font-size:clamp(30px,8.6vw,38px);line-height:1.22;letter-spacing:-.02em;margin-top:10px}
+  .hero-light .lead{font-size:15.5px;line-height:1.75;margin-top:14px;max-width:none}
+  .hero-light .cta-row{margin-top:22px;gap:10px}
+  .hero-light .cta-row .btn{flex:1 1 calc(50% - 10px);text-align:center;padding:14px 10px;margin:0}
+  .hero-fig img{aspect-ratio:4/3;object-position:center 55%}
+  .hero-fig figcaption{font-size:12.5px}
+  .hero-light .keyfacts{margin-top:8px;padding-bottom:28px;grid-template-columns:repeat(2,minmax(0,1fr))}
+  .hero-light .keyfacts div{padding:16px 12px 4px 0}
+  .hero-light .keyfacts div + div{padding-left:14px}
+  .hero-light .keyfacts div:nth-child(odd){padding-left:0;border-left:0}
+  .hero-light .keyfacts dt{font-size:26px}
+  .hero-light .keyfacts dd{font-size:12px;letter-spacing:.03em}
+  .sec,.space-sec{padding-block:60px}
+  .sec-head{margin-bottom:24px;display:block}
+  .sec-head .more,.sec-head .link-arrow{display:inline-block;margin-top:10px}
+  .sec h2,h2{font-size:clamp(25px,7vw,30px);line-height:1.3;letter-spacing:-.015em}
+  .eyebrow{font-size:11.5px;letter-spacing:.26em}
+  p.muted,.sec p{font-size:15px}
+  .cards4{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+  .scard{padding-bottom:12px}
+  .scard img{margin-bottom:8px}
+  .scard .disp{font-size:11px;letter-spacing:.12em}
+  .scard b{font-size:17px}
+  .scard small{font-size:12px;line-height:1.4}
+  .scard .disp,.scard b,.scard small{padding-inline:12px}
+  .tiles{gap:8px}
+  .tiles-tech{grid-template-columns:1fr;gap:18px}
+  .tile-cap b{font-size:15px}.tile-cap small{font-size:13px}
+  .track{gap:0}
+  .track li{padding-block:12px;font-size:14.5px}
+  .svc3{gap:8px}
+  .svc h3{font-size:17.5px}
+  .svc p{font-size:14.5px}
+  .framed{padding:12px}
+  .spec dt,.spec dd,.access dt,.access dd{font-size:14.5px}
+  .dl{width:100%}
+  .cta-band .wrap{padding-block:56px}
+  .cta-band h2{font-size:26px}
+  .cta-band .cta-row{flex-direction:column;align-items:stretch}
+  .cta-band .cta-row .btn{text-align:center}
+  .cta-band .tel,.cta-band .phone{font-size:22px;text-align:center}
+  footer .wrap{padding-block:40px}
+  footer{font-size:14px}
+  .subhero .wrap{padding-block:64px 40px}
+  .subhero h1{font-size:clamp(30px,8.6vw,38px)}
+  .subnav{top:calc(env(safe-area-inset-top,0px) + 58px);overflow-x:auto;flex-wrap:nowrap;scrollbar-width:none;margin-inline:-18px;padding-inline:18px}
+  .subnav::-webkit-scrollbar{display:none}
+  .subnav a,.subnav .chip{white-space:nowrap}
+  .form input,.form select,.form textarea{font-size:16px}
+  .two{gap:24px}
+  .steps li{font-size:15px}
+}
+/* 베이지 바닥에 맞춘 틴트 */
+.sec.tint{background:var(--blush)}
+.hero-fig img{background:var(--blush)}
+/* 문의서 체크 그룹 */
+.form label em{color:var(--accent);font-style:normal;font-weight:600}
+.form .chk{border:1px solid var(--line);border-radius:2px;padding:12px 14px 6px;margin:0 0 16px;display:flex;flex-wrap:wrap;gap:6px 8px;background:var(--surface)}
+.form .chk legend{padding:0 6px;font-size:13.5px;color:var(--ink);font-weight:500}
+.form .chk legend small{color:var(--muted);font-weight:300}
+.form .chk label{display:inline-flex;align-items:center;gap:6px;margin:0;padding:7px 12px 7px 9px;border:1px solid var(--line);border-radius:999px;font-size:13.5px;cursor:pointer;background:var(--bg);user-select:none}
+.form .chk label:has(input:checked){background:var(--accent);border-color:var(--accent);color:#fff}
+.form .chk input{margin:0;width:14px;height:14px;accent-color:var(--accent)}
+.form .chk label:has(input:checked) input{accent-color:#fff}
+.form input[type=time],.form input[type=date]{min-height:44px}
+.cta-band .btn.wa{border-color:rgba(142,195,218,.6);color:var(--light);margin:0}
+.cta-tel{text-decoration:none;color:inherit}
+footer p a{color:inherit;text-decoration:none}
+.form input,.form select,.form textarea{background:var(--surface)}
+@media (max-width:640px){.form .btn.solid{width:100%;text-align:center}.form{padding:22px 16px}}
