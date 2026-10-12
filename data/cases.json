@@ -1,7 +1,163 @@
 [
  {
+  "id": "case-icpc",
+  "eyebrow": "Case 01 · International Conference",
+  "title": {
+   "ko": "국제수도경찰협의체 ICPC 2026",
+   "en": "International Capital Police Council 2026",
+   "zh": "2026国际首都警察协议会"
+  },
+  "text": {
+   "ko": "서울경찰청이 주최한 2026 국제수도경찰협의체(2026.06.23–25)의 환영 만찬. 세빛섬 외벽과 진입로를 행사 그래픽으로 감싸고, 메인홀은 참가국 배너와 메인 LED 월, 좌우 보조 모니터를 갖춘 원탁 만찬장으로, 리셉션홀은 인터뷰 존과 브랜딩한 리셉션 바로 운영했습니다.",
+   "en": "Welcome dinner of the International Capital Police Council 2026 (23–25 June), hosted by the Seoul Metropolitan Police Agency. The facade and approach were wrapped in event graphics; the Main Hall became a round-table banquet with national banners, the main LED wall and side monitors; the Reception Hall hosted an interview zone and a fully branded bar.",
+   "zh": "首尔警察厅主办的2026国际首都警察协议会（6月23–25日）欢迎晚宴。三座岛外墙与入口通道以活动视觉包装；主厅设各国横幅、主LED屏与两侧辅助屏的圆桌晚宴；接待厅设采访区与品牌包装的酒吧。"
+  },
+  "facts": [
+   {
+    "ko": "세빛섬 외벽 대형 래핑 · 진입로 배너",
+    "en": "Facade wrap & approach banners",
+    "zh": "外墙大型包装与入口旗帜"
+   },
+   {
+    "ko": "메인홀: 원탁 만찬 · 참가국 배너 · 현악 공연",
+    "en": "Main Hall: banquet, national banners, string quartet",
+    "zh": "主厅：圆桌晚宴、各国横幅、弦乐演奏"
+   },
+   {
+    "ko": "리셉션홀: 인터뷰 존 · 포토월 · 프레스",
+    "en": "Reception Hall: interview zone, photo wall, press",
+    "zh": "接待厅：采访区、拍照墙、媒体"
+   },
+   {
+    "ko": "칵테일 바 래핑 · 참가국 국기 웰컴 드링크",
+    "en": "Wrapped bar & national-flag welcome drinks",
+    "zh": "酒吧包装与各国国旗迎宾饮品"
+   }
+  ],
+  "photos": [
+   {
+    "src": "icpc-dinner-wide.jpg",
+    "alt": "환영 만찬 — 방사형 LED 조명 아래 원탁",
+    "wide": true
+   },
+   {
+    "src": "icpc-setting.jpg",
+    "alt": "만찬 전 세팅 — 참가국 배너와 메인 LED 월",
+    "wide": false
+   },
+   {
+    "src": "icpc-dinner.jpg",
+    "alt": "환영 만찬",
+    "wide": false
+   },
+   {
+    "src": "icpc-strings.jpg",
+    "alt": "현악 공연과 언론 취재",
+    "wide": false
+   },
+   {
+    "src": "icpc-bar.jpg",
+    "alt": "행사 브랜딩으로 래핑한 리셉션 바",
+    "wide": false
+   },
+   {
+    "src": "icpc-cans.jpg",
+    "alt": "참가국 국기 라벨 웰컴 드링크",
+    "wide": false
+   },
+   {
+    "src": "icpc-interview.jpg",
+    "alt": "리셉션홀 인터뷰 존과 포토월",
+    "wide": false
+   },
+   {
+    "src": "icpc-facade.jpg",
+    "alt": "세빛섬 외벽 대형 래핑",
+    "wide": true
+   }
+  ]
+ },
+ {
+  "id": "case-inc",
+  "eyebrow": "Case 02 · Incentive Dinner",
+  "title": {
+   "ko": "인도 기업 인센티브 디너",
+   "en": "Indian company incentive dinner",
+   "zh": "印度企业奖励旅游晚宴"
+  },
+  "text": {
+   "ko": "인도 가구 브랜드의 해외 인센티브 투어 디너. 메인홀 천장에 행성과 별 오브제를 띄워 「Adventure」 테마를 연출하고, 리셉션홀은 한강 창가를 따라 뷔페를, 원형 칵테일 바와 테라스에서는 노을과 함께 웰컴 드링크를 운영했습니다.",
+   "en": "An overseas incentive-tour dinner for an Indian furniture brand. Planets and stars floated over the Main Hall for an “Adventure” theme; the Reception Hall served a buffet along the river windows, and welcome drinks flowed from the round bar out to the sunset terrace.",
+   "zh": "印度家具品牌的海外奖励旅游晚宴。主厅天花悬挂星球与星形装置营造“Adventure”主题；接待厅沿江景窗设自助餐，圆形酒吧与露台伴着日落提供迎宾饮品。"
+  },
+  "facts": [
+   {
+    "ko": "메인홀: 원탁 디너 · 행성 오브제 · LED 브랜딩",
+    "en": "Main Hall: round-table dinner, planet décor, LED branding",
+    "zh": "主厅：圆桌晚宴、星球装饰、LED品牌"
+   },
+   {
+    "ko": "리셉션홀: 한강 창가 뷔페 · 측면 LED 월",
+    "en": "Reception Hall: riverside buffet, side LED wall",
+    "zh": "接待厅：江景自助餐、侧面LED屏"
+   },
+   {
+    "ko": "테라스: 노을 웰컴 드링크 · 스탠딩 테이블",
+    "en": "Terrace: sunset welcome drinks, high tables",
+    "zh": "露台：日落迎宾饮品、高脚桌"
+   },
+   {
+    "ko": "인도 음식 · 채식 등 특별 식단",
+    "en": "Indian & vegetarian menus",
+    "zh": "印度菜与素食等特别餐单"
+   }
+  ],
+  "photos": [
+   {
+    "src": "inc-mainhall.jpg",
+    "alt": "행성 오브제를 띄운 메인홀 디너",
+    "wide": true
+   },
+   {
+    "src": "inc-door.jpg",
+    "alt": "스틸 도어 너머의 메인홀",
+    "wide": false
+   },
+   {
+    "src": "inc-table.jpg",
+    "alt": "원탁 디너 테이블 세팅",
+    "wide": false
+   },
+   {
+    "src": "inc-buffet.jpg",
+    "alt": "리셉션홀 뷔페와 LED 월",
+    "wide": true
+   },
+   {
+    "src": "inc-buffet-river.jpg",
+    "alt": "한강 창가 뷔페",
+    "wide": false
+   },
+   {
+    "src": "inc-bar-sunset.jpg",
+    "alt": "칵테일 바에서 테라스로",
+    "wide": false
+   },
+   {
+    "src": "terrace-entrance-sunset.jpg",
+    "alt": "테라스 입구",
+    "wide": false
+   },
+   {
+    "src": "terrace-tables-sunset.jpg",
+    "alt": "노을 지는 테라스 스탠딩 테이블",
+    "wide": true
+   }
+  ]
+ },
+ {
   "id": "case-fan",
-  "eyebrow": "Case 01 · Fan Festival",
+  "eyebrow": "Case 03 · Fan Festival",
   "title": {
    "ko": "게임 5주년 팬 페스티벌",
    "en": "Game 5th-anniversary fan festival",
@@ -94,7 +250,7 @@
  },
  {
   "id": "case-it",
-  "eyebrow": "Case 02 · Partner Conference",
+  "eyebrow": "Case 04 · Partner Conference",
   "title": {
    "ko": "IT 기업 파트너 컨퍼런스",
    "en": "IT partner conference",
@@ -162,7 +318,7 @@
  },
  {
   "id": "case-dress",
-  "eyebrow": "Case 03 · Exhibition",
+  "eyebrow": "Case 05 · Exhibition",
   "title": {
    "ko": "웨딩드레스 브랜드 전시",
    "en": "Bridal couture exhibition",
@@ -235,7 +391,7 @@
  },
  {
   "id": "case-intl",
-  "eyebrow": "Case 04 · International Meeting",
+  "eyebrow": "Case 06 · International Meeting",
   "title": {
    "ko": "국제기구 실무 회의",
    "en": "International organisation meeting",
@@ -313,7 +469,7 @@
  },
  {
   "id": "case-sym",
-  "eyebrow": "Case 05 · Launch Symposium",
+  "eyebrow": "Case 07 · Launch Symposium",
   "title": {
    "ko": "제약사 신제품 런칭 심포지엄",
    "en": "Pharmaceutical launch symposium",
@@ -401,7 +557,7 @@
  },
  {
   "id": "case-win",
-  "eyebrow": "Case 06 · Year-end Gala",
+  "eyebrow": "Case 08 · Year-end Gala",
   "title": {
    "ko": "겨울 테마 연말 갈라 디너",
    "en": "Winter-themed year-end gala",
@@ -474,7 +630,7 @@
  },
  {
   "id": "case-kick",
-  "eyebrow": "Case 07 · Kickoff & Wellness",
+  "eyebrow": "Case 09 · Kickoff & Wellness",
   "title": {
    "ko": "스포츠웨어 브랜드 연간 킥오프",
    "en": "Sportswear brand annual kickoff",
