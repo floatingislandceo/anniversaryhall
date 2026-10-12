@@ -39,6 +39,7 @@
     <h2 data-i18n="con.h2">연락처</h2>
     <dl class="spec">
       <div><dt><span data-i18n="c.tel">전화</span></dt><dd><a href="tel:+8225372440">02-537-2440</a></dd></div>
+      <div><dt>WhatsApp</dt><dd><a href="https://wa.me/821067153458?text=%EC%95%88%EB%85%95%ED%95%98%EC%84%B8%EC%9A%94%2C%20%EC%95%A0%EB%8B%88%EB%B2%84%EC%85%94%EB%A6%AC%ED%99%80%20%EB%8C%80%EA%B4%80%20%EB%AC%B8%EC%9D%98%EB%93%9C%EB%A6%BD%EB%8B%88%EB%8B%A4." target="_blank" rel="noopener">010-6715-3458</a> <small class="muted"><span data-i18n="c.wa">세빛섬 예약실</span></small></dd></div>
       <div><dt><span data-i18n="c.mail">이메일</span></dt><dd><a href="mailto:anniversary.kr@gmail.com">anniversary.kr@gmail.com</a></dd></div>
       <div><dt><span data-i18n="c.addr">주소</span></dt><dd><span data-i18n="foot.addr">서울 서초구 반포동 650 세빛섬 채빛섬 1층</span></dd></div>
     </dl>
@@ -57,24 +58,37 @@
   <form class="form" id="enq" novalidate>
     <div class="eyebrow">Enquiry Form</div>
     <h2 data-i18n="con.form">문의서 작성</h2>
-    <label for="f-name"><span data-i18n="fm.name">성함 · 회사</span></label><input id="f-name" name="name" required>
-    <label for="f-tel"><span data-i18n="fm.tel">연락처</span></label><input id="f-tel" name="tel" required>
+    <label for="f-name"><span data-i18n="fm.name">성함 · 회사</span> <em>*</em></label><input id="f-name" name="name" required autocomplete="name">
     <div class="row2">
-      <div><label for="f-date"><span data-i18n="fm.date">희망 날짜</span></label><input id="f-date" name="date" type="date"></div>
-      <div><label for="f-guests"><span data-i18n="fm.guests">예상 인원</span></label><input id="f-guests" name="guests" type="number" min="1" max="1000" placeholder="120"></div>
+      <div><label for="f-mail"><span data-i18n="fm.mail">이메일</span> <em>*</em></label><input id="f-mail" name="email" type="email" required autocomplete="email" placeholder="name@company.com"></div>
+      <div><label for="f-tel"><span data-i18n="fm.tel">연락처</span> <em>*</em></label><input id="f-tel" name="tel" type="tel" required autocomplete="tel" placeholder="010-0000-0000"></div>
     </div>
-    <label for="f-type"><span data-i18n="fm.type">행사 종류</span></label>
-    <select id="f-type" name="type">
-      <option data-i18n="o1">기업 연회 · 송년회</option>
-      <option data-i18n="o2">컨퍼런스 · 세미나 · 심포지엄</option>
-      <option data-i18n="o3">신제품 발표 · 런칭</option>
-      <option data-i18n="o4">웨딩</option>
-      <option data-i18n="o5">돌잔치 · 가족 연회</option>
-      <option data-i18n="o6">전시 · 팝업 · 촬영</option>
-      <option data-i18n="o7">기타</option>
-    </select>
-    <label for="f-msg"><span data-i18n="fm.msg">요청 사항</span></label><textarea id="f-msg" name="msg" rows="4"></textarea>
-    <p class="form-err" id="formErr" hidden><span data-i18n="fm.err">성함과 연락처를 입력해 주세요.</span></p>
+    <div class="row2">
+      <div><label for="f-date"><span data-i18n="fm.date">희망 날짜</span> <em>*</em></label><input id="f-date" name="date" type="date" required></div>
+      <div><label for="f-guests"><span data-i18n="fm.guests">예상 인원</span> <em>*</em></label><input id="f-guests" name="guests" type="number" min="1" max="1000" placeholder="120" required inputmode="numeric"></div>
+    </div>
+    <div class="row2">
+      <div><label for="f-start"><span data-i18n="fm.start">사용 시작</span></label><input id="f-start" name="start" type="time" step="1800"></div>
+      <div><label for="f-end"><span data-i18n="fm.end">사용 종료</span></label><input id="f-end" name="end" type="time" step="1800"></div>
+    </div>
+    <fieldset class="chk"><legend><span data-i18n="fm.type">행사 종류</span> <small><span data-i18n="fm.multi">(복수 선택 가능)</span></small></legend>
+      <label><input type="checkbox" name="type" value="세미나 · 컨퍼런스"><span><span data-i18n="o.sem">세미나 · 컨퍼런스</span></span></label>
+      <label><input type="checkbox" name="type" value="전시회 · 쇼케이스"><span><span data-i18n="o.exh">전시회 · 쇼케이스</span></span></label>
+      <label><input type="checkbox" name="type" value="갈라 디너 · 기업 연회"><span><span data-i18n="o.gala">갈라 디너 · 기업 연회</span></span></label>
+      <label><input type="checkbox" name="type" value="신제품 런칭 · 브랜드 행사"><span><span data-i18n="o.launch">신제품 런칭 · 브랜드 행사</span></span></label>
+      <label><input type="checkbox" name="type" value="가족 연회 · 돌잔치 · 웨딩"><span><span data-i18n="o.fam">가족 연회 · 돌잔치 · 웨딩</span></span></label>
+      <label><input type="checkbox" name="type" value="팝업 이벤트 · 촬영"><span><span data-i18n="o.pop">팝업 이벤트 · 촬영</span></span></label>
+      <label><input type="checkbox" name="type" value="기타"><span><span data-i18n="o.etc">기타</span></span></label>
+    </fieldset>
+    <fieldset class="chk"><legend><span data-i18n="fm.meal">식사 형태</span></legend>
+      <label><input type="radio" name="meal" value="코스 (착석)"><span><span data-i18n="m.course">코스 (착석)</span></span></label>
+      <label><input type="radio" name="meal" value="뷔페"><span><span data-i18n="m.buffet">뷔페</span></span></label>
+      <label><input type="radio" name="meal" value="핑거푸드 · 칵테일"><span><span data-i18n="m.finger">핑거푸드 · 칵테일</span></span></label>
+      <label><input type="radio" name="meal" value="커피 브레이크만"><span><span data-i18n="m.coffee">커피 브레이크만</span></span></label>
+      <label><input type="radio" name="meal" value="식사 없음"><span><span data-i18n="m.none">식사 없음</span></span></label>
+    </fieldset>
+    <label for="f-msg"><span data-i18n="fm.msg">요청 사항</span></label><textarea id="f-msg" name="msg" rows="4" placeholder="무대·LED 사용, 포토존, 예산 범위 등 자유롭게 적어 주세요 / Stage, LED, photo zone, budget…"></textarea>
+    <p class="form-err" id="formErr" hidden><span data-i18n="fm.err">성함, 이메일, 연락처, 희망 날짜, 인원은 꼭 입력해 주세요.</span></p>
     <button class="btn solid" type="submit"><span data-i18n="fm.send">이메일로 문의 보내기</span></button>
     <p class="muted small"><span data-i18n="fm.note">버튼을 누르면 이메일 앱이 열리고 작성한 내용이 anniversary.kr@gmail.com 앞으로 채워집니다.</span></p>
   </form>
@@ -85,7 +99,7 @@
     <div>
       <b class="foot-brand"><span data-i18n="brand">애니버셔리홀</span></b>
       <p data-i18n="foot.addr">서울 서초구 반포동 650 세빛섬 채빛섬 1층</p>
-      <p><span class="mono">T</span> 02-537-2440 &nbsp; <span class="mono">E</span> anniversary.kr@gmail.com</p>
+      <p><span class="mono">T</span> <a href="tel:+8225372440">02-537-2440</a> &nbsp; <span class="mono">W</span> <a href="https://wa.me/821067153458" target="_blank" rel="noopener">010-6715-3458</a> &nbsp; <span class="mono">E</span> <a href="mailto:anniversary.kr@gmail.com">anniversary.kr@gmail.com</a></p>
     </div>
     <ul class="foot-links"><li><a href="./"><span data-i18n="nav.home">홈</span></a></li><li><a href="spaces.html"><span data-i18n="nav.spaces">공간 안내</span></a></li><li><a href="events.html"><span data-i18n="nav.events">행사 사례</span></a></li><li><a href="wedding.html"><span data-i18n="nav.wedding">웨딩 · 가족</span></a></li><li><a href="gallery.html"><span data-i18n="nav.gallery">갤러리</span></a></li><li><a href="location.html"><span data-i18n="nav.location">오시는 길</span></a></li><li><a href="contact.html"><span data-i18n="nav.contact">대관 문의</span></a></li></ul>
   </div>
