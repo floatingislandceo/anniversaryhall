@@ -1,7 +1,7 @@
 /* 애니버셔리홀 브랜드: 메인 블루 #0E96C8 · 서브 세빛섬 유리톤 #AEBAD4 · 건메탈 #48505A · 웜 화이트 #F7F7F5 · 제목은 얇은 고딕 */
 :root{
-  --bg:#f6f5f2; --surface:#ffffff; --blush:#eceef1; --ink:#2b3036; --muted:#6b7078; --line:#dce1e7;
-  --river:#3f4751; --river-2:#4a535e; --light:#8ec3da; --accent:#2b8db6; --on-river:#f2f4f7;
+  --bg:#f6f5f2; --surface:#ffffff; --blush:#e9eff3; --ink:#2b3036; --muted:#6b7078; --line:#dce1e7;
+  --river:#3f4751; --river-2:#4a535e; --light:#8ec3da; --accent:#247ca6; --on-river:#f2f4f7;
   --display:"Cormorant Garamond","Gowun Batang",Georgia,serif;
   --serif:"IBM Plex Sans KR","Noto Sans SC",-apple-system,"Apple SD Gothic Neo","Malgun Gothic","PingFang SC",sans-serif;
   --sans:"IBM Plex Sans KR","Noto Sans SC",-apple-system,"Apple SD Gothic Neo","Malgun Gothic","PingFang SC",sans-serif;
