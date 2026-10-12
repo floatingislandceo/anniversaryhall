@@ -103,4 +103,13 @@
     var body='성함·회사 / Name: '+v('f-name')+'\n이메일 / Email: '+v('f-mail')+'\n연락처 / Phone: '+v('f-tel')+'\n희망 날짜 / Date: '+v('f-date')+'\n사용 시간 / Hours: '+hours+'\n예상 인원 / Guests: '+v('f-guests')+'\n행사 종류 / Type: '+types+'\n식사 형태 / Meal: '+meal+'\n\n'+v('f-msg');
     location.href='mailto:anniversary.kr@gmail.com?subject='+encodeURIComponent('[대관 문의] '+types+' '+v('f-date')+' '+v('f-guests')+'명')+'&body='+encodeURIComponent(body);
   });
+
+  // scroll reveal
+  try{
+    var els=document.querySelectorAll('.sec > .wrap, .space-sec > .wrap, .cta-in, .hero-text, .keyfacts');
+    if('IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: reduce)').matches){
+      var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}})},{rootMargin:'0px 0px -8% 0px',threshold:.08});
+      els.forEach(function(el){el.classList.add('rv');io.observe(el)});
+    }
+  }catch(e){}
 })();
