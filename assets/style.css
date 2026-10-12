@@ -626,3 +626,10 @@ a.scard:hover b{text-decoration:none;color:var(--accent)}
 }
 @media (max-width:640px){.brand img{height:34px}.logo img,.logo svg{height:34px}}
 @media (max-width:640px){.hero-text .eyebrow{font-size:10.5px;letter-spacing:.2em;white-space:nowrap}}
+.form .chk label i{font-style:normal;font-family:var(--display);font-size:12.5px;opacity:.75;margin-left:4px;letter-spacing:.02em}
+/* 소셜 링크 */
+.social{list-style:none;margin:18px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:8px 10px}
+.social a{display:inline-flex;align-items:center;gap:7px;text-decoration:none;font-size:12.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink);border:1px solid var(--line);padding:8px 14px 8px 11px;transition:border-color .25s,color .25s,background .25s}
+.social a:hover{border-color:var(--accent);color:var(--accent)}
+.social svg{flex:none}
+.contact-social{margin-top:10px}

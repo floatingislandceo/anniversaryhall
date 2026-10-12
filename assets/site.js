@@ -99,8 +99,9 @@
     err.hidden=true;
     var types=[].map.call(f.querySelectorAll('input[name=type]:checked'),function(c){return c.value}).join(', ')||'-';
     var meal=(f.querySelector('input[name=meal]:checked')||{}).value||'-';
+    var diet=[].map.call(f.querySelectorAll('input[name=diet]:checked'),function(c){return c.value}).join(', ')||'-';
     var hours=(v('f-start')||'?')+' ~ '+(v('f-end')||'?');
-    var body='성함·회사 / Name: '+v('f-name')+'\n이메일 / Email: '+v('f-mail')+'\n연락처 / Phone: '+v('f-tel')+'\n희망 날짜 / Date: '+v('f-date')+'\n사용 시간 / Hours: '+hours+'\n예상 인원 / Guests: '+v('f-guests')+'\n행사 종류 / Type: '+types+'\n식사 형태 / Meal: '+meal+'\n\n'+v('f-msg');
+    var body='회사·단체 / Company: '+v('f-company')+'\n성명 / Name: '+v('f-name')+'\n이메일 / Email: '+v('f-mail')+'\n연락처 / Phone: '+v('f-tel')+'\n희망 날짜 / Date: '+v('f-date')+'\n사용 시간 / Hours: '+hours+'\n예상 인원 / Guests: '+v('f-guests')+'\n행사 종류 / Type: '+types+'\n식사 형태 / Meal: '+meal+'\n특별 식단 / Diet: '+diet+'\n\n'+v('f-msg');
     location.href='mailto:anniversary.kr@gmail.com?subject='+encodeURIComponent('[대관 문의] '+types+' '+v('f-date')+' '+v('f-guests')+'명')+'&body='+encodeURIComponent(body);
   });
 
