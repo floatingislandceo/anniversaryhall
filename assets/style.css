@@ -646,3 +646,36 @@ a.scard:hover b{text-decoration:none;color:var(--accent)}
   .subnav{top:calc(env(safe-area-inset-top,0px) + 126px)}
   .space-sec{scroll-margin-top:190px}
 }
+/* 로고 확대 + 언어/메뉴 버튼 가시성 */
+.brand img{height:44px}
+.brand small{font-size:11px;letter-spacing:.32em;color:var(--ink);opacity:.7}
+.lang{border:1px solid var(--ink);border-radius:0}
+.lang button{color:var(--ink);opacity:.9;font-weight:500;font-size:12.5px;padding:7px 12px;border-right:1px solid var(--line)}
+.lang button:last-child{border-right:0}
+.lang button[aria-pressed="true"]{background:var(--ink);color:#fff;opacity:1}
+.menu a{opacity:.9;font-weight:400}
+.burger{width:36px;height:32px;gap:6px}
+.burger span{height:2px;background:var(--ink);opacity:1}
+@media (min-width:981px){
+  .brand img{height:46px}
+  .site-head .bar{padding-top:24px}
+  .tools{top:30px}
+  .subnav{top:calc(env(safe-area-inset-top,0px) + 142px)}
+}
+@media (max-width:980px){
+  .brand img{height:42px}
+  .lang{border:1px solid var(--ink)}
+  .lang button{font-size:12px;padding:5px 10px}
+  .burger{width:40px;height:34px}
+  .burger span{height:2.5px}
+}
+@media (max-width:640px){.brand img{height:40px}}
+/* 모바일: 로고 가운데, 햄버거는 오른쪽 고정 */
+@media (max-width:980px){
+  .site-head .bar{position:relative;justify-content:center}
+  .brand{flex-basis:100%;align-items:center;text-align:center;padding-right:0}
+  .burger{position:absolute;right:16px;top:14px;margin:0}
+  .lang{margin:4px auto 0}
+  .bar{padding-bottom:10px}
+}
+@media (max-width:980px){.lang{margin:4px 0 0 auto}}
