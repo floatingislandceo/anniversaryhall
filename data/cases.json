@@ -1,5 +1,43 @@
 [
  {
+  "id": "case-wdd2025",
+  "eyebrow": "Case 10 · Lighting Ceremony",
+  "title": {
+   "ko": "2025 세계 당뇨병의 날 푸른빛 점등식",
+   "en": "World Diabetes Day 2025 Blue Light Ceremony",
+   "zh": "2025世界糖尿病日蓝光点灯仪式"
+  },
+  "text": {
+   "ko": "대한당뇨병학회와 당뇨병연구재단이 세계 당뇨병의 날을 맞아 연 푸른빛 점등식입니다. 메인홀 LED 월과 조명, 배너를 모두 캠페인 블루로 맞추고, 한강 위 세빛섬이 파랗게 물드는 순간을 무대 화면으로 함께 나눴습니다.",
+   "en": "The Korean Diabetes Association and the Korean Diabetes Research Foundation marked World Diabetes Day with a blue light ceremony. The Main Hall's LED wall, lighting and banners were all set in campaign blue, and guests watched Some Sevit light up blue over the Han River on the stage screen.",
+   "zh": "大韩糖尿病学会与糖尿病研究财团为迎接世界糖尿病日举办了蓝光点灯仪式。主厅的LED墙、灯光与横幅统一为活动蓝色，来宾通过舞台屏幕共同见证汉江上的三色岛被点亮成蓝色的瞬间。"
+  },
+  "facts": [
+   {
+    "ko": "일시: 2025년 11월 11일(화) 오후 6시",
+    "en": "Date: Tue 11 Nov 2025, 6 pm",
+    "zh": "时间：2025年11月11日（周二）下午6点"
+   },
+   {
+    "ko": "메인홀: 원형 테이블 만찬 · LED 월 점등 연출 · 좌우 대형 배너",
+    "en": "Main Hall: round-table dinner, LED wall lighting show, large side banners",
+    "zh": "主厅：圆桌晚宴、LED墙点灯演出、两侧大型横幅"
+   },
+   {
+    "ko": "리셉션홀: 푸른 조명 연회 · 등록 데스크",
+    "en": "Reception Hall: blue-lit reception, registration desk",
+    "zh": "接待厅：蓝色灯光酒会、签到台"
+   }
+  ],
+  "photos": [
+   {
+    "src": "ev-diabetes.jpg",
+    "alt": "세계 당뇨병의 날 점등식 메인 무대",
+    "wide": true
+   }
+  ]
+ },
+ {
   "id": "case-icpc",
   "eyebrow": "Case 01 · International Conference",
   "title": {
