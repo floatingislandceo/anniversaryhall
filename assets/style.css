@@ -679,3 +679,4 @@ a.scard:hover b{text-decoration:none;color:var(--accent)}
   .bar{padding-bottom:10px}
 }
 @media (max-width:980px){.lang{margin:4px 0 0 auto}}
+.foot-contact{display:flex;flex-wrap:wrap;gap:4px 14px}
