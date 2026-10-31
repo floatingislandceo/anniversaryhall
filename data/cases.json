@@ -1,5 +1,83 @@
 [
  {
+  "id": "case-wetours",
+  "eyebrow": "Case 11 · Incentive Dinner",
+  "title": {
+   "ko": "WE Tours & Travels 「South Korea Night」",
+   "en": "WE Tours & Travels — South Korea Night",
+   "zh": "WE Tours & Travels「South Korea Night」奖励旅游晚宴"
+  },
+  "text": {
+   "ko": "인도 여행사 WE Tours & Travels 단체의 인센티브 디너 「South Korea Night」. Main Hall은 방사형 LED 조명 아래 원탁 만찬과 무대 공연으로, Reception Hall은 한강 창가 뷔페와 댄스 플로어로 하룻밤을 채웠습니다.",
+   "en": "An incentive dinner for a WE Tours & Travels group from India. The Main Hall set round tables under the radial LED ceiling, with a live show and a Korean traditional drum performance on stage. The Reception Hall served a buffet by the river windows, with Indian, halal and vegetarian menus, and later turned into the dance floor.",
+   "zh": "印度旅行社 WE Tours & Travels 团体的奖励旅游晚宴「South Korea Night」。主厅在放射形LED灯光下布置圆桌晚宴，舞台上演现场表演与韩国传统打击乐；接待厅提供江景自助餐（可备印度餐、清真及素食），随后变身舞池。"
+  },
+  "facts": [
+   {
+    "ko": "Main Hall: 원탁 만찬 · LED 무대 · 크리스털 센터피스",
+    "en": "Main Hall: round-table dinner, LED stage, crystal centerpieces",
+    "zh": "主厅：圆桌晚宴、LED舞台、水晶桌花"
+   },
+   {
+    "ko": "Stage: 라이브 쇼 · 한국 전통 풍물 공연",
+    "en": "Stage: live show, Korean traditional drum performance",
+    "zh": "舞台：现场表演、韩国传统风物演出"
+   },
+   {
+    "ko": "Reception Hall: 웰컴 드링크 · 한강 창가 뷔페 (인도식 · 할랄 · 채식)",
+    "en": "Reception Hall: welcome drinks, riverside buffet (Indian, halal, vegetarian)",
+    "zh": "接待厅：迎宾饮品、江景自助餐（印度餐、清真、素食）"
+   },
+   {
+    "ko": "Reception Hall: 댄스 플로어",
+    "en": "Reception Hall: dance floor",
+    "zh": "接待厅：舞池"
+   }
+  ],
+  "photos": [
+   {
+    "src": "wetours-tables.jpg",
+    "alt": "Main Hall round tables under radial LED lights",
+    "wide": true
+   },
+   {
+    "src": "wetours-centerpiece.jpg",
+    "alt": "Crystal centerpiece",
+    "wide": false
+   },
+   {
+    "src": "wetours-stage.jpg",
+    "alt": "South Korea Night stage",
+    "wide": false
+   },
+   {
+    "src": "wetours-show.jpg",
+    "alt": "Korean traditional drum performance",
+    "wide": false
+   },
+   {
+    "src": "wetours-drinks.jpg",
+    "alt": "Welcome drinks",
+    "wide": false
+   },
+   {
+    "src": "wetours-buffet.jpg",
+    "alt": "Riverside buffet",
+    "wide": false
+   },
+   {
+    "src": "wetours-dance.jpg",
+    "alt": "Dance floor in the Reception Hall",
+    "wide": false
+   },
+   {
+    "src": "wetours-group.jpg",
+    "alt": "Group photo",
+    "wide": false
+   }
+  ]
+ },
+ {
   "id": "case-wdd2025",
   "eyebrow": "Case 10 · Lighting Ceremony",
   "title": {
