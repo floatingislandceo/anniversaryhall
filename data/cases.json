@@ -1,5 +1,151 @@
 [
  {
+  "id": "case-futurize26",
+  "eyebrow": "Case 13 · Tech Conference",
+  "title": {
+   "ko": "LG U+ 「Futurize 26」 엔터프라이즈 AX 컨퍼런스",
+   "en": "LG U+ Futurize 26 — Enterprise AX Conference",
+   "zh": "LG U+「Futurize 26」企业AX大会"
+  },
+  "text": {
+   "ko": "LG U+의 기업 고객 대상 AX 컨퍼런스 「Futurize 26 — Future in Focus」. 브랜드 입구 게이트와 포토월로 손님을 맞고, 메인홀은 방사형 LED 조명과 풀 LED 월 키노트 무대로 만석을 채웠습니다. 리셉션홀은 전시와 네트워킹 뷔페로, 키노트 · 전시 · 네트워킹을 한강 위 한 층에서 진행했습니다.",
+   "en": "LG U+'s enterprise AX conference “Futurize 26 — Future in Focus”. Guests arrived through a branded entrance gate and photo wall; the Main Hall filled to capacity for keynotes on a full LED wall under radial lighting, and the Reception Hall hosted exhibits and a networking buffet — keynotes, exhibitions and networking, all on one floor by the Han River.",
+   "zh": "LG U+面向企业客户的AX大会「Futurize 26 — Future in Focus」。品牌入口门与拍照墙迎宾；主厅在放射形LED灯光与整面LED屏的主题演讲舞台前座无虚席；接待厅设展示与交流自助餐——主题演讲、展览与交流，尽在汉江上的同一层。"
+  },
+  "facts": [
+   {
+    "ko": "메인홀: 풀 LED 월 키노트 무대 · 방사형 LED 조명 · 만석",
+    "en": "Main Hall: full LED-wall keynote stage, radial lighting, full house",
+    "zh": "主厅：整面LED屏主题舞台、放射形灯光、满座"
+   },
+   {
+    "ko": "입구: 브랜드 게이트 · 포토월",
+    "en": "Entrance: branded gate & photo wall",
+    "zh": "入口：品牌门与拍照墙"
+   },
+   {
+    "ko": "리셉션홀: 전시 · 네트워킹 뷔페",
+    "en": "Reception Hall: exhibits & networking buffet",
+    "zh": "接待厅：展示与交流自助餐"
+   },
+   {
+    "ko": "테이블 넘버 · 다크 플라워 연출",
+    "en": "Table numbers & dark florals",
+    "zh": "桌号与深色花艺"
+   }
+  ],
+  "photos": [
+   {
+    "src": "futurize-fullhouse.jpg",
+    "alt": "Futurize 26, 만석의 메인홀",
+    "wide": true
+   },
+   {
+    "src": "futurize-keynote.jpg",
+    "alt": "풀 LED 월 키노트 무대",
+    "wide": false
+   },
+   {
+    "src": "futurize-mainhall.jpg",
+    "alt": "방사형 LED 조명 아래 메인홀",
+    "wide": false
+   },
+   {
+    "src": "futurize-gate.jpg",
+    "alt": "브랜드 입구 게이트",
+    "wide": false
+   },
+   {
+    "src": "futurize-photowall.jpg",
+    "alt": "포토월 — Future in Focus",
+    "wide": false
+   },
+   {
+    "src": "futurize-buffet.jpg",
+    "alt": "리셉션홀 네트워킹 뷔페",
+    "wide": false
+   },
+   {
+    "src": "futurize-tables.jpg",
+    "alt": "테이블 넘버와 다크 플라워",
+    "wide": false
+   }
+  ]
+ },
+ {
+  "id": "case-affin2025",
+  "eyebrow": "Case 12 · Gala Dinner",
+  "title": {
+   "ko": "AFFIN 그룹 커뮤니티 뱅킹 방카 컨퍼런스 2025 갈라 디너",
+   "en": "AFFIN Group Community Banking Banca Conference 2025 — Gala Dinner",
+   "zh": "AFFIN集团社区银行保险大会2025 晚宴"
+  },
+  "text": {
+   "ko": "말레이시아 AFFIN 그룹의 해외 컨퍼런스 서울 갈라 디너(2026.09.29). 노을 지는 테라스 웰컴과 한강 레드카펫 · 한복 영접으로 시작해, 메인홀은 네이비 & 화이트 갈라 테이블과 블루 조명 아래 오프닝 공연, 국악 무대, 시상식으로 채웠습니다.",
+   "en": "Seoul gala dinner of AFFIN Group's overseas conference (29 September 2026). The evening opened with a sunset welcome on the terrace and a riverside red carpet with hanbok greeters; the Main Hall followed with navy-and-white gala tables, an opening show under blue light, Korean traditional music and an award ceremony.",
+   "zh": "马来西亚AFFIN集团海外大会的首尔晚宴（2026年9月29日）。以露台日落迎宾和汉江红毯、韩服迎宾开场；主厅布置海军蓝与白色晚宴餐桌，在蓝色灯光下进行开场表演、国乐演出与颁奖典礼。"
+  },
+  "facts": [
+   {
+    "ko": "테라스: 노을 웰컴 리셉션",
+    "en": "Terrace: sunset welcome reception",
+    "zh": "露台：日落迎宾酒会"
+   },
+   {
+    "ko": "입구: 레드카펫 · 한복 영접",
+    "en": "Entrance: red carpet & hanbok greeters",
+    "zh": "入口：红毯与韩服迎宾"
+   },
+   {
+    "ko": "메인홀: 네이비 & 화이트 갈라 테이블 · 블루 조명",
+    "en": "Main Hall: navy & white gala tables, blue lighting",
+    "zh": "主厅：海军蓝与白色晚宴餐桌、蓝色灯光"
+   },
+   {
+    "ko": "무대: 오프닝 공연 · 국악 공연 · 시상식",
+    "en": "Stage: opening show, Korean traditional music, awards",
+    "zh": "舞台：开场表演、国乐演出、颁奖"
+   }
+  ],
+  "photos": [
+   {
+    "src": "affin-tables.jpg",
+    "alt": "네이비 & 화이트 갈라 테이블",
+    "wide": true
+   },
+   {
+    "src": "affin-entrance.jpg",
+    "alt": "채빛섬 갈라 디너 입구",
+    "wide": false
+   },
+   {
+    "src": "affin-hanbok.jpg",
+    "alt": "한강 레드카펫과 한복 영접",
+    "wide": false
+   },
+   {
+    "src": "affin-terrace.jpg",
+    "alt": "노을 지는 테라스 웰컴",
+    "wide": false
+   },
+   {
+    "src": "affin-opening.jpg",
+    "alt": "블루 조명 아래 오프닝 공연",
+    "wide": false
+   },
+   {
+    "src": "affin-award.jpg",
+    "alt": "시상식",
+    "wide": false
+   },
+   {
+    "src": "affin-group.jpg",
+    "alt": "갈라 단체 사진",
+    "wide": true
+   }
+  ]
+ },
+ {
   "id": "case-wetours",
   "eyebrow": "Case 11 · Incentive Dinner",
   "title": {
